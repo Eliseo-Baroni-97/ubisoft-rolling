@@ -1,0 +1,26 @@
+body{
+    font-family: 'Rubik', sans-serif;
+}
+.bg-navbar{
+    background: #262626;
+    color: #FFF;
+    font-weight: bolder;
+}
+.footer-link{
+    color: #FFF;
+    opacity: 70%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.footer-link:hover{
+    color: #FFF;
+    opacity: 100%;
+    text-decoration: none;
+}
+
+.titles{
+    color: #FFF;
+    opacity: 100%;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
