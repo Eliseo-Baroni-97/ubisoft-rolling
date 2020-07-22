@@ -6,6 +6,13 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
     entry: {
         index: './src/js/index.js',
+        404: './src/js/404.js',
+        about: './src/js/about.js',
+        admin: './src/js/admin.js',
+        contact: './src/js/contact.js',
+        games: './src/js/games.js',
+        login: './src/js/login.js',
+        register: './src/js/register.js',
     },
     output: {
         filename: 'js/[name].js',

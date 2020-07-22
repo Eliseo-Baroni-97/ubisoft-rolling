@@ -24,3 +24,31 @@ body{
     font-weight: bolder;
     text-transform: uppercase;
 }
+
+.boton-rosa{
+    background-color: #FE7B68;
+    opacity: 90%;
+    font-weight: bolder;
+    color: #FFF;
+}
+
+.boton-rosa:hover{
+    background-color: #FE7B68;
+    opacity: 100%;
+    font-weight: bolder;
+    color: #FFF;
+}
+
+.btn-link{
+    color: #FFF;
+    text-decoration: none;
+}
+.btn-link:hover{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.hr-2{
+    border-color: #FFF;
+}
+
