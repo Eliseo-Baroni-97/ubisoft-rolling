@@ -55,6 +55,49 @@ module.exports = {
                 useShortDoctype: true
             }
         }),
+        new HtmlWebpackPlugin({
+            template: './src/admin.html',
+            inject: true,
+            chunks: ['admin'],
+            filename: './admin.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/404.html',
+            inject: true,
+            chunks: ['404'],
+            filename: './404.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/about.html',
+            inject: true,
+            chunks: ['about'],
+            filename: './about.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/contact.html',
+            inject: true,
+            chunks: ['contact'],
+            filename: './contact.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/games.html',
+            inject: true,
+            chunks: ['games'],
+            filename: './games.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/login.html',
+            inject: true,
+            chunks: ['login'],
+            filename: './login.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/register.html',
+            inject: true,
+            chunks: ['register'],
+            filename: './register.html'
+        }),
+
         new MiniCssExtractPlugin({
             filename: 'css/style.css'
         }),
