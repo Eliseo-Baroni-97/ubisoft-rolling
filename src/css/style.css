@@ -52,3 +52,31 @@ body{
     border-color: #FFF;
 }
 
+.carousel-title1{
+    color: #FFF;
+    font-weight: 900;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-title2{
+    color: #FFF;
+    opacity: 90%;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.28);
+    text-decoration: none;
+}
+
+.carousel-title2:hover{
+    cursor: pointer;
+    color: #FFF;
+    opacity: 100%;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.28);
+    text-decoration: none;
+}
