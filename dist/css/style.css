@@ -125,6 +125,14 @@ body{
     font-weight: 900;
     font-size: 1,5rem;
     text-transform: uppercase;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.3);
+    -moz-box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.3);
+    box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.3);
     letter-spacing: 1.2px;
+}
+
+.card-hover-shadow:hover{
+    -webkit-box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.42);
+    -moz-box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.42);
+    box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.42);
 }
