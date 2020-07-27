@@ -10,6 +10,11 @@ body{
     font-weight: bolder;
     margin-bottom: 76px;
 }
+
+.upper-footer{
+    background-color: #262626;
+}
+
 .footer-link{
     color: #FFF;
     opacity: 70%;
@@ -162,4 +167,20 @@ body{
     -moz-box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.3);
     box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.3);
     letter-spacing: 1.2px;
+}
+
+.link-card{
+    color: #FE7B68;
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+.link-card:hover{
+    color: #FE7B68;
+    font-weight: 900;
+    font-size: 1.6rem;
+    -webkit-box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.3);
+    -moz-box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.3);
+    box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.3);
+    text-decoration: none;
 }
