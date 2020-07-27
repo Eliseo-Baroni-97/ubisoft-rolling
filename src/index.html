@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="fix-navbar">
         <nav class="navbar navbar-expand-lg navbar-dark bg-navbar fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -47,7 +47,7 @@
         </nav>
     </header>
     <main>
-        <section class="pt-5">
+        <section>
             <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
@@ -94,8 +94,8 @@
             <h1 class="titulos my-5">explorar mas juegos</h1>
         </div>
         <article class="container-cards pb-5">
-            <div class="d-flex justify-content-around pb-3">
-                <div class="card mx-2 bg-white rounded card-hover-shadow" style="width: 18rem;">
+            <div class="d-flex flex-wrap justify-content-around pb-3">
+                <div class="card bg-white rounded card-hover-shadow" style="width: 18rem;">
                     <img src="img/cards/card-juegos-01.jpg" class="card-img-top" alt="assasins-creed-collections">
                     <div class="card-body">
                         <a class="titulos-card" href="#">Coleccion Assasin's Creed Truly Fan</a>
@@ -208,8 +208,36 @@
         </div>
         <hr>
     </section>
+    <section>
+        <div class="text-center">
+            <h1 class="titulos my-4">Ubisoft Merch</h1>
+        </div>
+        <article class="container-fluid bg-ubistore p-5 mb-5">
 
-
+        </article>
+        <hr>
+    </section>
+    <section class="container-fluid bg-pink mt-5 p-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-12 col-lg-5 d-none d-lg-block p-4">
+                <img src="img/devices icon.png" alt="multiple devices image" width="90%">
+            </div>
+            <div class="col-sm-12 col-lg-5 align-self-center">
+                <h1 class="titulos my-4 text-light">Queda en contacto con nosotros</h1>
+                <h2 class="lead text-light">Puedes entrar a la pagina de contacto pulsando el boton. O bien, puedes
+                    descargar nuestra app Ubisoft Club para dispositivos mobiles.</h2>
+                <div class="row d-flex">
+                    <a href="contact.html" class="btn btn-ubisoft-dark rounded-pill px-5 py-3 my-4 mr-5">Contacto</a>
+                    <div class="my-4 align-self-center">
+                        <a href="https://www.apple.com" target="blank_"><i
+                                class="fab fa-3x fa-app-store footer-link mx-3"></i></a>
+                        <a href="https://www.google.com" target="blank_"><i
+                                class="fab fa-3x fa-google-play footer-link mx-3"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -233,7 +261,7 @@
             </div>
         </div>
     </div>
-    <footer class="bg-navbar py-4">
+    <footer class="bg-navbar py-5">
         <div class="container">
             <div class="row">
                 <div class="col-sm-5 col-lg-3">
