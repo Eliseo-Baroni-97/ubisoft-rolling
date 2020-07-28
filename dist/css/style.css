@@ -7,11 +7,20 @@
 body{
     font-family: 'Rubik', sans-serif;
 }
+.fix-navbar{
+    margin-bottom: 76px;
+}
 .bg-navbar{
-    background: #262626;
+    background: #050505;
     color: #FFF;
     font-weight: bolder;
+    margin-bottom: 76px;
 }
+
+.upper-footer{
+    background-color: #262626;
+}
+
 .footer-link{
     color: #FFF;
     opacity: 70%;
@@ -79,4 +88,126 @@ body{
 }
 
 
+.carousel-title1{
+    color: #FFF;
+    font-family: 'Rubik Mono One', sans-serif   !important;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
 
+.carousel-title2{
+    color: #FFF;
+    opacity: 90%;
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.28);
+    text-decoration: none;
+}
+
+.carousel-title2:hover{
+    cursor: pointer;
+    color: #FFF;
+    opacity: 100%;
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.28);
+    text-decoration: none;
+}
+
+.titulos{
+    font-family: 'Rubik Mono One', sans-serif   !important;
+    letter-spacing: 1.2px;
+    color: #050505;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.titulos-card{
+    color: #050505;
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.titulos-card:hover{
+    cursor: pointer;
+    color: #050505;
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.btn-ubisoft{
+    background: #FE7B68;
+    color: #FFF;
+    font-weight: 900;
+    font-size: 1,5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.btn-ubisoft:hover{
+    background: #FE7B68;
+    color: #FFF;
+    font-weight: 900;
+    font-size: 1,5rem;
+    text-transform: uppercase;
+    -webkit-box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.3);
+    -moz-box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.3);
+    box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.3);
+    letter-spacing: 1.2px;
+}
+
+.card-hover-shadow:hover{
+    -webkit-box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.42);
+    -moz-box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.42);
+    box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.42);
+}
+
+.bg-ubistore{
+    background-color: #c7c7c7;
+}
+
+.bg-pink{
+    background-color: #FE7B68;
+}
+
+.btn-ubisoft-dark{
+    background: #262626;
+    color: #FFF;
+    font-weight: 900;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.btn-ubisoft-dark:hover{
+    background: #262626;
+    color: #FFF;
+    font-weight: 900;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    -webkit-box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.3);
+    -moz-box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.3);
+    box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.3);
+    letter-spacing: 1.2px;
+}
+
+.link-card{
+    color: #FE7B68;
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+.link-card:hover{
+    color: #FE7B68;
+    font-weight: 900;
+    font-size: 1.6rem;
+    -webkit-box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.3);
+    -moz-box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.3);
+    box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.3);
+    text-decoration: none;
+}
