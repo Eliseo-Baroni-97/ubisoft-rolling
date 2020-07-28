@@ -58,4 +58,25 @@ body{
     border-color: #FFF;
 }
 
+.z-index{
+ position: absolute; 
+ top: 380px;
+ left:10px;
+ z-index: 1
+}
+
+.b-com{
+ position: absolute; 
+ top: 235px;
+ left:10px;
+ z-index: 1
+}
+.b-com-lg{
+ position: absolute; 
+ top: 450px;
+ left:10px;
+ z-index: 1
+}
+
+
 
