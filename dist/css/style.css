@@ -67,27 +67,6 @@ body{
     border-color: #FFF;
 }
 
-.z-index{
- position: absolute; 
- top: 380px;
- left:10px;
- z-index: 1
-}
-
-.b-com{
- position: absolute; 
- top: 235px;
- left:10px;
- z-index: 1
-}
-.b-com-lg{
- position: absolute; 
- top: 450px;
- left:10px;
- z-index: 1
-}
-
-
 .carousel-title1{
     color: #FFF;
     font-family: 'Rubik Mono One', sans-serif   !important;
@@ -211,3 +190,23 @@ body{
     box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.3);
     text-decoration: none;
 }
+
+.z-index{
+    position: absolute; 
+    top: 380px;
+    left:10px;
+    z-index: 1
+   }
+   
+   .b-com{
+    position: absolute; 
+    top: 235px;
+    left:10px;
+    z-index: 1
+   }
+   .b-com-lg{
+    position: absolute; 
+    top: 450px;
+    left:10px;
+    z-index: 1
+   }
