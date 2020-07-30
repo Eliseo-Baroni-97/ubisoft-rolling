@@ -27,16 +27,15 @@ module.exports = {
             },
             {
                 test: /\.(png|jpe?g|gif)$/i,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: 'img/[name].[ext]',
-                        },
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: 'img/[name].[ext]',
                     },
-                ],
-                
+                }, ],
+
             },
+
             {
                 test: /\.svg$/,
                 loader: 'svg-inline-loader'
@@ -102,8 +101,7 @@ module.exports = {
             filename: 'css/style.css'
         }),
         new CopyWebpackPlugin({
-            patterns: [
-                {
+            patterns: [{
                     from: './src/img',
                     to: 'img',
                 },
@@ -115,4 +113,3 @@ module.exports = {
     ],
 
 };
-
