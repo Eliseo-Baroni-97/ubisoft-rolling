@@ -11,9 +11,6 @@ body{
     margin-bottom: 76px;
 }
 
-.upper-footer{
-    background-color: #262626;
-}
 
 .footer-link{
     color: #FFF;
@@ -184,3 +181,4 @@ body{
     box-shadow: 6px 6px 38px -7px rgba(0,0,0,0.3);
     text-decoration: none;
 }
+
