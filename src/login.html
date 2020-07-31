@@ -10,109 +10,90 @@
     <title>Ubisoft | rollingGames</title>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
 </head>
 
 <body>
-    <header class="fix-navbar">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-navbar fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/logo.svg" width="50" height="50" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="games.html">JUEGOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="404.html">SOPORTE</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="" data-toggle="modal" data-target="#modalLoginRegistro">MI CUENTA</a>
-                        </li>
-                    </ul>
+    <div class="bg2">
+        <section class="cuadranteForm2 bg text-center my-auto mx-auto">
+            <div>
+                <div class="row py-3 d-flex justify-content-center d-flex align-items-center ">
+                    <div class="col-sm-9 col-md-5 py-1">
+                        <a href="login.html" class="active text-light text-decoration-none ">
+                            <h1 class="animate__animated animate__wobble animate__delay-1s">Ingresa</h1>
+                        </a>
+                    </div>
+                    <div class="col-sm-9 col-md-5 py-1 mt-1">
+                        <a href="register.html" class="text-decoration-none  ">
+                            <h2 class="letragris">Regístrate</h2>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-md-2 py-1 ">
+                        <a href="index.html" class="close-button">
+                            <div class="in">
+                                <div class="close-button-block"></div>
+                                <div class="close-button-block"></div>
+                            </div>
+                            <div class="out">
+                                <div class="close-button-block"></div>
+                                <div class="close-button-block"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="py-2">
+                    <a href="index.html"><img src="/src/img/login/toppng.com-2018-ubisoft-entertainment-ubisoft-logo-2017-2032x1867.png" class="imagenLogo " width=233 alt="Logo unisoft login "></a>
+                </div>
+                <div class="container ">
+                    <div class="col-sm-12">
+                        <form class="form-group mx-auto m-4 ">
+                            <div>
+                                <div class="form-group text-center ">
+                                    <label class="d-flex justify-content-center d-flex align-items-center">
+                                        <i class="fas fa-2x fa-user-astronaut letragris"></i>
+                                        <h2 class="letragris px-5">Usuario</h2>
+                                    </label>
+                                    <input placeholder="Ingresa tu usuario " type="text " id="usuarioLogin " class="rounded-pill form-control letragris">
+                                </div>
+                                <br />
+                            </div>
+                            <div>
+                                <div class="form-group text-center ">
+                                    <label class="d-flex justify-content-center d-flex align-items-center">
+                                        <i class="fas fa-2x fa-key letragris"></i>
+                                        <h2 class="letragris px-5">Contraseña</h2>
+                                    </label>
+
+                                    <input placeholder="Ingresa tu contraseña " type="text " id="contraseñaLogin " class="rounded-pill form-control letragris ">
+                                </div> <br />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="py-4">
+                    <button class="btn btn-ubisoft rounded-pill btn-lg  px-5 ">Entrar</button>
+                </div>
+                <div class="py-2">
+                    <a href="404.html" class="letragris"> ¿Has olvidado tu contraseña?
+                    </a>
+                </div>
+                <div class="conectar">
+                    <h3 class="letragris">Conecta directamente con:</h3>
+                    <div class="d-flex justify-content-around">
+                        <a href="404.html"><i class="fab fa-4x fa-facebook-square iFace"></i></a>
+                        <a href="404.html"><i class="fab fa-4x fa-google-plus-square iGoogle"></i></a>
+                        <a href="404.html"><i class=" fab fa-4x fa-twitter-square iTwitter "></i></a>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-
-
-
-
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="modalLoginRegistro" tabindex="-1" role="dialog" aria-labelledby="modalLoginRegistroLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-header">
-                <h5 class="modal-title titles" id="modalLoginRegistroLabel">MI CUENTA</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                </button>
-              </div>
-            <div class="modal-content">
-                <div class="modal-body bg-navbar text-center py-5">
-                    <button class="btn rounded-pill boton-rosa btn-lg"><a href="login.html" class="btn-link">ENTRAR</a></button>
-                    <hr class="hr-2">
-                    <button class="btn rounded-pill boton-rosa btn-lg"><a href="register.html" class="btn-link">REGISTRARTE</a></button>
-                </div>
-            </div>
-        </div>
+        </section>
     </div>
-    <footer class="bg-navbar py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 col-lg-3">
-                    <div class="mb-3">
-                        <img src="img/logo.svg" alt="logo" width="33%">
-                    </div>
-                    <a href="404.html" class="footer-link">//POLITICA DE PRIVACIDAD</a>
-                    <a href="404.html" class="footer-link">//INFORMACION LEGAL</a>
-                    <p class="mt-4">Hecho con ❤︎ por Comision 1A</p>
-                </div>
-                <div class="col-sm-2 col-lg-6">
-                    <h4 class="titles px-3 mb-2">Mapa del Sitio</h4>
-                    <hr class="hr-2">
-                    <div class="d-flex">
-                        <a href="games.html" class="footer-link px-3">Juegos</a>
-                        <a href="contact.html" class="footer-link px-3">Contacto</a>
-                        <a href="about.html" class="footer-link px-3">Acerca de Nosotros</a>
-                    </div>
-                    <div class="d-flex">
-                        <a href="404.html" class="footer-link p-3">Ubisoft-USA</a>
-                        <a href="404.html" class="footer-link p-3" target="blank_">soporte</a>
-                        <a href="games.html" class="footer-link p-3" target="blank_">shop</a>
-                        <a href="admin.html" class="footer-link p-3" target="blank_">admin</a>
-                    </div>
-                    <div class="mt-4 text-center">
-                        <p>&copy; Todos los Derechos Reservados.</p>
-                    </div>
-                </div>
-                <div class="col-sm-5 col-lg-3">
-                    <div class="d-flex flex-column text-center">
-                        <a href="https://facebook.com/" target="blank_"><i
-                                class="fab fa-facebook fa-2x my-2 footer-link"></i></a>
-                        <a href="https://twitter.com/" target="blank_"><i
-                                class="fab fa-twitter-square fa-2x my-2 footer-link"></i></a>
-                        <a href="https://www.twitch.tv/" target="blank_"><i
-                                class="fab fa-twitch fa-2x my-2 footer-link"></i></a>
-                        <a href="https://www.instagram.com/" target="blank_"><i
-                                class="fab fa-instagram fa-2x my-2 footer-link"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+
+    <!-- modal olvidate la contraseña -->
+
+
+
 </body>
 
 </html>
