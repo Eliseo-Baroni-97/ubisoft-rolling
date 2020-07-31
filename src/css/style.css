@@ -1,3 +1,150 @@
+                        /* login css */
+                        
+                        body .bg2 {
+                            background-image: url(/src/img/login/loginimagen.gif);
+                            /* Fijar la imagen de fondo este vertical y
+horizontalmente y centrado */
+                            background-position: center center;
+                            /* Esta imagen no debe de repetirse */
+                            background-repeat: no-repeat;
+                            /* COn esta regla fijamos la imagen en la pantalla. */
+                            background-attachment: fixed;
+                            /* La imagen ocupa el 100% y se reescala */
+                            background-size: cover;
+                            /* Damos un color de fondo mientras la imagen está cargando  */
+                        }
+                        
+                        .letragris {
+                            color: #C7C7C7;
+                            /* color: #262626 */
+                        }
+                        
+                        .cuadranteForm2 {
+                            width: 500px;
+                            max-width: 100%;
+                            margin: auto;
+                            margin-top: 30px;
+                            padding: 20px;
+                            border-radius: 5px;
+                            background: rgba(253, 200, 200, 0.35);
+                            box-shadow: 0 0 20px 1px rgba(0, 0, 0, 1);
+                            position: relative;
+                        }
+                        
+                        .imagenLogo {
+                            filter: invert(0.3);
+                        }
+                        
+                        .form-control {
+                            background: #c7c7c7;
+                            color: #262626;
+                        }
+                        /* css botones fontawes logReg*/
+                        /* boton cierreeeee */
+                        
+                        .close-button {
+                            display: block;
+                            width: 40px;
+                            height: 40px;
+                            position: relative;
+                            overflow: hidden;
+                        }
+                        
+                        .close-button>div {
+                            position: relative;
+                        }
+                        
+                        .close-button-block {
+                            width: 40px;
+                            height: 20px;
+                            position: relative;
+                            overflow: hidden;
+                        }
+                        
+                        .close-button-block:before,
+                        .close-button-block:after {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            left: calc(55% - 4px);
+                            display: block;
+                            width: 4px;
+                            height: 25px;
+                            -webkit-transform-origin: bottom center;
+                            transform-origin: bottom center;
+                            background: white;
+                            -webkit-transition: all ease-out 280ms;
+                            transition: all ease-out 280ms;
+                        }
+                        
+                        .close-button-block:last-of-type {
+                            -webkit-transform: rotate(180deg);
+                            transform: rotate(180deg);
+                        }
+                        
+                        .close-button .in .close-button-block:before {
+                            -webkit-transition-delay: 280ms;
+                            transition-delay: 280ms;
+                            -webkit-transform: translateX(20px) translateY(-20px) rotate(45deg);
+                            transform: translateX(20px) translateY(-20px) rotate(45deg);
+                        }
+                        
+                        .close-button .in .close-button-block:after {
+                            -webkit-transition-delay: 280ms;
+                            transition-delay: 280ms;
+                            -webkit-transform: translateX(-22px) translateY(-22px) rotate(-45deg);
+                            transform: translateX(-22px) translateY(-22px) rotate(-45deg);
+                        }
+                        
+                        .close-button .out {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                        
+                        .close-button .out .close-button-block:before {
+                            -webkit-transform: translateX(-5px) translateY(5px) rotate(45deg);
+                            transform: translateX(-5px) translateY(5px) rotate(45deg);
+                        }
+                        
+                        .close-button .out .close-button-block:after {
+                            -webkit-transform: translateX(5px) translateY(5px) rotate(-45deg);
+                            transform: translateX(5px) translateY(5px) rotate(-45deg);
+                        }
+                        
+                        .close-button:hover .in .close-button-block:before {
+                            -webkit-transform: translateX(-5px) translateY(5px) rotate(45deg);
+                            transform: translateX(-5px) translateY(5px) rotate(45deg);
+                        }
+                        
+                        .close-button:hover .in .close-button-block:after {
+                            -webkit-transform: translateX(5px) translateY(5px) rotate(-45deg);
+                            transform: translateX(5px) translateY(5px) rotate(-45deg);
+                        }
+                        
+                        .close-button:hover .out .close-button-block:before {
+                            -webkit-transform: translateX(-20px) translateY(20px) rotate(45deg);
+                            transform: translateX(-20px) translateY(20px) rotate(45deg);
+                        }
+                        
+                        .close-button:hover .out .close-button-block:after {
+                            -webkit-transform: translateX(20px) translateY(20px) rotate(-45deg);
+                            transform: translateX(20px) translateY(20px) rotate(-45deg);
+                        }
+                        /* color iconos  conectar*/
+                        
+                        .iFace {
+                            color: #4267b2;
+                        }
+                        
+                        .iGoogle {
+                            color: #db4a39
+                        }
+                        
+                        .iTwitter {
+                            color: #00acee
+                        }
+                        
                         body {
                             font-family: 'Rubik', sans-serif;
                         }
@@ -188,10 +335,10 @@
                             box-shadow: 6px 6px 38px -7px rgba(0, 0, 0, 0.3);
                             text-decoration: none;
                         }
-                        /* login css */
+                        /* css register */
                         
-                        body .bg2 {
-                            background-image: url(/src/img/login/loginimagen.gif);
+                        body .bg1 {
+                            background-image: url(/src/img/register/registerimg.jpg);
                             /* Fijar la imagen de fondo este vertical y
 horizontalmente y centrado */
                             background-position: center center;
@@ -206,30 +353,24 @@ horizontalmente y centrado */
                         
                         .letragris {
                             color: #C7C7C7;
-                            /* color: #262626 */
                         }
                         
-                        .cuadranteForm2 {
+                        .cuadranteForm1 {
                             width: 500px;
                             max-width: 100%;
                             margin: auto;
                             margin-top: 30px;
                             padding: 20px;
                             border-radius: 5px;
-                            background: rgba(253, 200, 200, 0.35);
+                            background: rgba(255, 101, 80, 0.3);
                             box-shadow: 0 0 20px 1px rgba(0, 0, 0, 1);
                             position: relative;
                         }
                         
-                        .imagenLogo {
-                            filter: invert(0.3);
-                        }
-                        
                         .form-control {
                             background: #c7c7c7;
-                            color: #262626;
+                            color: #7c3e34;
                         }
-                        /* css botones fontawes logReg*/
                         /* boton cierreeeee */
                         
                         .close-button {
@@ -321,7 +462,6 @@ horizontalmente y centrado */
                             -webkit-transform: translateX(20px) translateY(20px) rotate(-45deg);
                             transform: translateX(20px) translateY(20px) rotate(-45deg);
                         }
-                        /* color iconos  conectar*/
                         
                         .iFace {
                             color: #4267b2;
@@ -333,4 +473,12 @@ horizontalmente y centrado */
                         
                         .iTwitter {
                             color: #00acee
+                        }
+                        
+                        .imagenLogo {
+                            filter: invert(0.2);
+                        }
+                        
+                        .order-0 {
+                            order: -1;
                         }
