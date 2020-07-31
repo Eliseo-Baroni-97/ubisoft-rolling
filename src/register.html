@@ -15,7 +15,7 @@
     <div class="bg1">
         <section class="cuadranteForm1 bg-1 text-center my-auto mx-auto">
             <div>
-                <div class="row py-3 d-flex justify-content-center d-flex align-items-center ">
+                <div class="row no-gutters py-3 d-flex justify-content-center d-flex align-items-center ">
                     <div class="col-sm-9 col-md-5 py-1">
                         <a href="register.html" class="text-decoration-none text-light ">
                             <h2 class="animate__animated animate__wobble animate__delay-1s">Regístrate</h2>
@@ -23,10 +23,10 @@
                     </div>
                     <div class="col-sm-9 col-md-5 py-1">
                         <a href="login.html" class="text-decoration-none text-dark ">
-                            <h2 class="">Ingresa</h2>
+                            <h2 class="letragris">Ingresa</h2>
                         </a>
                     </div>
-                    <div class="col-sm-3 col-md-2 py-1 ">
+                    <div class="col-sm-3 col-md-2 py-1 order-0">
                         <a href="index.html" class="close-button">
                             <div class="in">
                                 <div class="close-button-block"></div>
@@ -40,93 +40,65 @@
                     </div>
                 </div>
                 <div class="py-2">
-                    <img src="/src/img/register/logounisoft.png" class="imagen" width=235 alt="Logo login">
+                    <img src="/src/img/register/kindpng_1448320.png" class="w-100 imagenLogo" alt="Logo login">
                 </div>
                 <div class="row no-gutters container ">
                     <div class="col-sm-12 col-md-9 ">
                         <form class="form-group mx-auto">
                             <div class="row">
                                 <div class="form-group text-center mx-3 w-100">
-                                    <label>Nombre y Apellido </label>
+                                    <div class="text-center my-">
+                                        <i class="fas fa-user fa-5x  letragris m-2"></i>
+                                    </div>
+                                    <label class="letragris">Usuario</label>
                                     <div class="d-flex justify-content-center d-flex align-items-center">
-                                        <i class="fas fa-user-astronaut p-2 m-2 border border-dark rounded-circle"></i>
-                                        <input placeholder="Ingresa tus nombres" type="text" id="nyaReg" class="form-control col-xs-5">
+                                        <input placeholder="Usuario" type="text" id="usuarioReg" class="rounded-pill form-control">
                                     </div>
                                     <br />
                                 </div>
                                 <div class="form-group text-center mx-3 w-100">
-                                    <label>E-mail </label>
+                                    <label class="letragris">Nombre y Apellido</label>
                                     <div class="d-flex justify-content-center d-flex align-items-center">
-                                        <i class="fas fa-at p-2 m-2  border border-dark rounded-circle "></i>
-                                        <input placeholder="Ingresa tu email" type="email" id="emailReg" class="form-control">
+                                        <input placeholder="Nombre completo" type="text" id="nombreReg" class="rounded-pill form-control col-xs-5">
                                     </div>
                                     <br />
                                 </div>
                                 <div class="form-group text-center mx-3 w-100">
-                                    <label>Nombre de usuario </label>
+                                    <label class="letragris">E-mail</label>
                                     <div class="d-flex justify-content-center d-flex align-items-center">
-                                        <i class="fas fa-key p-2 m-2  border border-dark rounded-circle "></i>
-                                        <input placeholder="Ingresa tu usuario" type="text" id="usuarioReg" class="form-control">
+                                        <input placeholder="Email" type="email" id="emailReg" class="rounded-pill form-control">
                                     </div>
                                     <br />
                                 </div>
                                 <div class="form-group text-center mx-3 w-100">
-                                    <label>Contraseña </label>
+                                    <label class="letragris">Contraseña</label>
                                     <div class="d-flex justify-content-center d-flex align-items-center">
-                                        <i class="fas fa-key p-2 m-2 border border-dark rounded-circle "></i>
-                                        <input placeholder="Ingresa tu usuario" type="text" id="contraseñaReg" class="form-control">
+                                        <input placeholder="Contraseña" type="text" id="contraseñaReg" class="rounded-pill form-control">
                                     </div>
                                     <br />
                                 </div>
                             </div>
-                            <div class="text-center my-5 ml-5">
-                                <a href="#id" class="flipper-container ">
-                                    <div id="id" class="flipper">
-                                        <div class="front-face" data-icon="&#x27a3;"><span data-hover="Clicked">Enviar</span>
-                                        </div>
-                                        <div class="back-face" data-icon="&#10003;">¡Gracias!</div>
-                                    </div>
-                                </a>
-                            </div>
+                            <button class="btn rounded-pill boton-rosa btn-lg">Enviar</button>
                         </form>
                     </div>
-                    <div class="col-sm-12 col-md-3 d-none d-md-block">
-                        <div class="connect  mb-3">
-                            <h5>Regístrate con:</h5>
+                    <div class="col-sm-12 col-md-3 d-none d-md-block my-4">
+                        <div class="connect  mb-3 my-5">
+                            <h5 class="letragris">Auto registro:</h5>
                         </div>
-                        <a href=" " class="facebook ">
-                            <div class="icon icon-fill my-3"><i class="fa fa-facebook"></i></div>
-                        </a> <br />
-                        <a href=" " class="twitter">
-                            <div class="icon icon-enter my-3"><i class="fa fa-twitter"></i></div>
-                        </a> <br />
-                        <a href=" " class="google ">
-                            <div class="icon icon-collapse my-3"><i class="fa fa-google"></i></div>
-                        </a> <br />
-                        <a href=" " class="twitter">
-                            <div class="icon icon-rotate my-3"><i class="fa fa-github "></i></div>
-                        </a> <br />
+                        <a href="404.html"><i class="fab fa-4x fa-facebook-square iFace  my-3"></i></a>
+                        <a href="404.html"><i class="fab fa-4x fa-google-plus-square iGoogle my-3"></i></a>
+                        <a href="404.html"><i class=" fab fa-4x fa-twitter-square iTwitter my-3"></i></a>
                     </div>
-                    <div class="col-sm-12 col-md-3 d-md-none">
+                    <div class="col-sm-12 col-md-3  d-md-none">
                         <div>
-                            <h5>Regístrate con:
+                            <h5 class="letragris">Regístrate con:
                             </h5>
                         </div>
-                        <div class="d-flex justify-content-center">
-                            <a href=" " class="facebook ">
-                                <div class="icon icon-fill"><i class="fa fa-facebook"></i></div>
-                            </a> <br />
-                            <a href=" " class="twitter">
-                                <div class="icon icon-enter"><i class="fa fa-twitter"></i></div>
-                            </a> <br />
-                            <a href=" " class="google ">
-                                <div class="icon icon-collapse"><i class="fa fa-google"></i></div>
-                            </a> <br />
-                            <a href=" " class="twitter">
-                                <div class="icon icon-rotate"><i class="fa fa-github "></i></div>
-                            </a> <br />
+                        <div class="d-flex justify-content-around">
+                            <a href="404.html"><i class="fab fa-4x fa-facebook-square iFace rounded-circle"></i></a>
+                            <a href="404.html"><i class="fab fa-4x fa-google-plus-square iGoogle"></i></a>
+                            <a href="404.html"><i class=" fab fa-4x fa-twitter-square iTwitter"></i></a>
                         </div>
-
                     </div>
                 </div>
             </div>
