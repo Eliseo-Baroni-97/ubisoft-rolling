@@ -100,6 +100,7 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'css/style.css'
         }),
+
         new CopyWebpackPlugin({
             patterns: [{
                     from: './src/img',

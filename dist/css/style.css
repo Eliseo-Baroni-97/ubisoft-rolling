@@ -508,3 +508,11 @@ horizontalmente y centrado */
       left: 10px;
       z-index: 1;
   }
+  
+  .fondo-agregar {
+      background-image: url(/src/img/productos/catalogo.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+  }
