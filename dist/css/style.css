@@ -20,11 +20,6 @@ horizontalmente y centrado */
       /* Damos un color de fondo mientras la imagen está cargando  */
   }
   
-  .letragris {
-      color: #C7C7C7;
-      /* color: #262626 */
-  }
-  
   .cuadranteForm2 {
       width: 500px;
       max-width: 100%;
@@ -38,7 +33,7 @@ horizontalmente y centrado */
   }
   
   .imagenLogo {
-      filter: invert(0.3);
+      filter: invert(0.2);
   }
   
   .form-control {
@@ -360,6 +355,10 @@ horizontalmente y centrado */
       color: #C7C7C7;
   }
   
+  .letraSombra {
+      text-shadow: black 0.1em 0.1em 0.2em;
+  }
+  
   .cuadranteForm1 {
       width: 500px;
       max-width: 100%;
@@ -482,6 +481,10 @@ horizontalmente y centrado */
   
   .imagenLogo {
       filter: invert(0.2);
+  }
+  
+  .imagenSombra {
+      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
   }
   
   .order-0 {
