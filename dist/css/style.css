@@ -547,3 +547,13 @@ horizontalmente y centrado */
   .form-control {
       background-color: #c7c7c7;
   }
+  /* css index */
+  
+  .sin-p {
+      padding: 0 !important;
+      margin: 0 !important;
+  }
+  
+  .sin-w {
+      width: 0 !important;
+  }

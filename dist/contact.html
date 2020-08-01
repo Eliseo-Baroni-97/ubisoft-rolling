@@ -1,1 +1,180 @@
-<!doctype html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="keywords" content="games, assasins creed, juegos, ubisoft"><meta name="author" content="Grupo 3 - Comision 1A"><meta name="copyright" content="Comision 1A - Todos los Derechos Reservados"><title>Ubisoft | rollingGames</title><link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet"><link href="css/style.css" rel="stylesheet"></head><body class="fondo-contacto"><header class="fix-navbar"><nav class="navbar navbar-expand-lg navbar-dark bg-navbar fixed-top"><div class="container"><a class="navbar-brand" href="index.html"><img src="img/logo.svg" width="50" height="50" alt="logo"> </a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav mr-auto"><li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li><li class="nav-item"><a class="nav-link" href="games.html">JUEGOS</a></li><li class="nav-item"><a class="nav-link" href="404.html">SOPORTE</a></li></ul><ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link" href="" data-toggle="modal" data-target="#modalLoginRegistro">MI CUENTA</a></li></ul></div></div></nav></header><main><div class="container mt-5 position-form"><section class="card border-dark my-4 card-contacto"><div class="card-body text-center"><h3 class="card-title"><strong>Formulario de contacto</strong></h3><form class="my-4" onsubmit="validarGeneral(event)"><div class="form-group"><input class="form-control rounded-pill" placeholder="Nombre y Apellido " id="nombre" onblur="requerido(this)" onkeyup="requerido(this)"><div class="valid-feedback">Todo bien</div><div class="invalid-feedback">Ingresa tu nombre querido</div></div><div class="form-group"><input class="form-control rounded-pill" placeholder="Email" id="email" onblur="revisarEmail(this)" onkeyup="revisarEmail(this)"><div class="valid-feedback"></div><div class="invalid-feedback">Ingrese un email válido</div></div><div class="form-group rounded-pill"><select class="form-control rounded-pill" id="asunto"><option>Soporte tecnico</option><option>Consulta administrativa</option><option>Asesoría comercial</option><option>Otro</option></select></div><div class="form-group"><textarea class="form-control rounded" id="consulta" placeholder="Ingresa tu consulta (al menos de 10 caracteres)" onblur="revisarConsulta(this)"></textarea><div class="valid-feedback">Perfecto, continuar.</div><div class="invalid-feedback">Por favor ingrese una consulta.</div></div><div class="form-group"><div class="form-check"><input class="form-check-input" type="checkbox" id="terminos"> <label class="form-check-label">Estoy de acuerdo de recibir un correo respuesta de parte de ubisoft</label><div class="valid-feedback"></div><div class="invalid-feedback"></div></div></div><button class="btn btn-ubisoft rounded-pill btn-lg px-5 text-center" id="btnEnviar" type="submit">Enviar</button><div class="alert alert-info m-4 d-none" id="msjEnvio" role="alert">El correo se envió correctamente</div></form></div></section></div></main><div class="modal fade" id="modalLoginRegistro" tabindex="-1" role="dialog" aria-labelledby="modalLoginRegistroLabel" aria-hidden="true"><div class="modal-dialog"><div class="modal-header"><h5 class="modal-title titles" id="modalLoginRegistroLabel">MI CUENTA</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"></button></div><div class="modal-content"><div class="modal-body bg-navbar text-center py-5"><button class="btn rounded-pill boton-rosa btn-lg"><a href="login.html" class="btn-link">ENTRAR</a></button><hr class="hr-2"><button class="btn rounded-pill boton-rosa btn-lg"><a href="register.html" class="btn-link">REGISTRARTE</a></button></div></div></div></div><footer class="bg-navbar py-4"><div class="container"><div class="row"><div class="col-sm-5 col-lg-3"><div class="mb-3"><img src="img/logo.svg" alt="logo" width="33%"></div><a href="404.html" class="footer-link">//POLITICA DE PRIVACIDAD</a> <a href="404.html" class="footer-link">//INFORMACION LEGAL</a><p class="mt-4">Hecho con ❤︎ por Comision 1A</p></div><div class="col-sm-2 col-lg-6"><h4 class="titles px-3 mb-2">Mapa del Sitio</h4><hr class="hr-2"><div class="d-flex"><a href="games.html" class="footer-link px-3">Juegos</a> <a href="contact.html" class="footer-link px-3">Contacto</a> <a href="about.html" class="footer-link px-3">Acerca de Nosotros</a></div><div class="d-flex"><a href="404.html" class="footer-link p-3">Ubisoft-USA</a> <a href="404.html" class="footer-link p-3" target="blank_">soporte</a> <a href="games.html" class="footer-link p-3" target="blank_">shop</a> <a href="admin.html" class="footer-link p-3" target="blank_">admin</a></div><div class="mt-4 text-center"><p>&copy; Todos los Derechos Reservados.</p></div></div><div class="col-sm-5 col-lg-3"><div class="d-flex flex-column text-center"><a href="https://facebook.com/" target="blank_"><i class="fab fa-facebook fa-2x my-2 footer-link"></i></a> <a href="https://twitter.com/" target="blank_"><i class="fab fa-twitter-square fa-2x my-2 footer-link"></i></a> <a href="https://www.twitch.tv/" target="blank_"><i class="fab fa-twitch fa-2x my-2 footer-link"></i></a> <a href="https://www.instagram.com/" target="blank_"><i class="fab fa-instagram fa-2x my-2 footer-link"></i></a></div></div></div></div></footer><script src="js/contact.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="games, assasins creed, juegos, ubisoft" />
+    <meta name="author" content="Grupo 3 - Comision 1A" />
+    <meta name="copyright" content="Comision 1A - Todos los Derechos Reservados" />
+    <title>Ubisoft | rollingGames</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet"></head>
+
+<body class="fondo-contacto">
+    <header class="fix-navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-navbar fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.svg" width="50" height="50" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="games.html">JUEGOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="404.html">SOPORTE</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="" data-toggle="modal" data-target="#modalLoginRegistro">MI CUENTA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-5 position-form">
+            <section class="card border-dark my-4 card-contacto">
+                <div class="card-body text-center">
+                    <h3 class="card-title "><strong>Formulario de contacto</strong></h3>
+                    <form class="my-4" onsubmit="validarGeneral(event)">
+                        <div class="form-group">
+                            <input type="text" class="form-control rounded-pill " placeholder="Nombre y Apellido "
+                                id="nombre" onblur="requerido(this)" onkeyup="requerido(this)">
+                            <div class="valid-feedback">
+                                Todo bien
+                            </div>
+                            <div class="invalid-feedback">
+                                Ingresa tu nombre querido
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control rounded-pill" placeholder="Email" id="email"
+                                onblur="revisarEmail(this)" onkeyup="revisarEmail(this)">
+                            <div class="valid-feedback">
+
+                            </div>
+                            <div class="invalid-feedback">
+                                Ingrese un email válido
+                            </div>
+                        </div>
+
+                        <div class="form-group rounded-pill">
+                            <select class="form-control rounded-pill" id="asunto">
+                                <option>Soporte tecnico</option>
+                                <option>Consulta administrativa</option>
+                                <option>Asesoría comercial</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control rounded" id="consulta"
+                                placeholder="Ingresa tu consulta (al menos de 10 caracteres)"
+                                onblur="revisarConsulta(this)"></textarea>
+                            <div class="valid-feedback">
+                                Perfecto, continuar.
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor ingrese una consulta.
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="terminos">
+                                <label class="form-check-label">Estoy de acuerdo de recibir un correo respuesta de parte
+                                    de ubisoft</label>
+                                <div class="valid-feedback">
+                                </div>
+                                <div class="invalid-feedback">
+
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-ubisoft rounded-pill btn-lg  px-5 text-center" id="btnEnviar" type="submit">Enviar</button>
+                        <div class="alert alert-info m-4 d-none" id="msjEnvio" role="alert">
+                            El correo se envió correctamente
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalLoginRegistro" tabindex="-1" role="dialog" aria-labelledby="modalLoginRegistroLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h5 class="modal-title titles" id="modalLoginRegistroLabel">MI CUENTA</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                </button>
+              </div>
+            <div class="modal-content">
+                <div class="modal-body bg-navbar text-center py-5">
+                    <button class="btn rounded-pill boton-rosa btn-lg"><a href="login.html" class="btn-link">ENTRAR</a></button>
+                    <hr class="hr-2">
+                    <button class="btn rounded-pill boton-rosa btn-lg"><a href="register.html" class="btn-link">REGISTRARTE</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-navbar py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 col-lg-3">
+                    <div class="mb-3">
+                        <img src="img/logo.svg" alt="logo" width="33%">
+                    </div>
+                    <a href="404.html" class="footer-link">//POLITICA DE PRIVACIDAD</a>
+                    <a href="404.html" class="footer-link">//INFORMACION LEGAL</a>
+                    <p class="mt-4">Hecho con ❤︎ por Comision 1A</p>
+                </div>
+                <div class="col-sm-2 col-lg-6">
+                    <h4 class="titles px-3 mb-2">Mapa del Sitio</h4>
+                    <hr class="hr-2">
+                    <div class="d-flex">
+                        <a href="games.html" class="footer-link px-3">Juegos</a>
+                        <a href="contact.html" class="footer-link px-3">Contacto</a>
+                        <a href="about.html" class="footer-link px-3">Acerca de Nosotros</a>
+                    </div>
+                    <div class="d-flex">
+                        <a href="404.html" class="footer-link p-3">Ubisoft-USA</a>
+                        <a href="404.html" class="footer-link p-3" target="blank_">soporte</a>
+                        <a href="games.html" class="footer-link p-3" target="blank_">shop</a>
+                        <a href="admin.html" class="footer-link p-3" target="blank_">admin</a>
+                    </div>
+                    <div class="mt-4 text-center">
+                        <p>&copy; Todos los Derechos Reservados.</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-lg-3">
+                    <div class="d-flex flex-column text-center">
+                        <a href="https://facebook.com/" target="blank_"><i
+                                class="fab fa-facebook fa-2x my-2 footer-link"></i></a>
+                        <a href="https://twitter.com/" target="blank_"><i
+                                class="fab fa-twitter-square fa-2x my-2 footer-link"></i></a>
+                        <a href="https://www.twitch.tv/" target="blank_"><i
+                                class="fab fa-twitch fa-2x my-2 footer-link"></i></a>
+                        <a href="https://www.instagram.com/" target="blank_"><i
+                                class="fab fa-instagram fa-2x my-2 footer-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="js/contact.js"></script></body>
+
+</html>
