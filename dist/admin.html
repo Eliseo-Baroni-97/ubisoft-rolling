@@ -60,7 +60,7 @@
                 <h1 class="titlesAdmin text-dark ">Aquí puedes agregar los juegos: </h3>
             </div>
 
-            <button class="btn btn-ubisoft rounded-pill btn-lg btn-block mx-5" data-toggle="modal " data-target="#modalProducto ">Agregar</button>
+            <button class="btn btn-ubisoft rounded-pill btn-lg btn-block mx-5" data-toggle="modal " data-target="#modaljuego " onclick="limpiarForm()">Agregar</button>
         </article>
         <div>
             <article class="table-responsive ">
@@ -158,50 +158,8 @@
 
                         </tr>
                     </thead>
-                    <tbody id="tablaProducto ">
-                        <div>
-                            <tr>
-                                <th scope="row ">1</th>
-                                <td>Juancho</td>
-                                <td>Lagarto</td>
-                                <td>jau@gsdg</td>
-                                <td>Holis</td>
-                                <td>Juancho_L</td>
-                                <td class="d-flex justify-content-center d-flex align-items-center">
-                                    <button class="btn btn-outline-info "><i class="far fa-thumbs-up"></i></button>
-                                    <button class="btn btn-outline-danger "><i class="far fa-thumbs-down"></i></button>
+                    <tbody id="tablaJuego ">
 
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row ">1</th>
-                                <td>Juancho</td>
-                                <td>Lagarto</td>
-                                <td>jau@gsdg</td>
-                                <td>Holis</td>
-                                <td>Juancho_L</td>
-                                <td class="d-flex justify-content-center d-flex align-items-center">
-                                    <button class="btn btn-outline-info "><i class="far fa-thumbs-up"></i></button>
-                                    <button class="btn btn-outline-danger "><i class="far fa-thumbs-down"></i></button>
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row ">1</th>
-                                <td>Juancho</td>
-                                <td>Lagarto</td>
-                                <td>jau@gsdg</td>
-                                <td>Holis</td>
-                                <td>Juancho_L</td>
-                                <td class="d-flex justify-content-center d-flex align-items-center">
-                                    <button class="btn btn-outline-info "><i class="far fa-thumbs-up"></i></button>
-                                    <button class="btn btn-outline-danger "><i class="far fa-thumbs-down"></i></button>
-
-                                </td>
-                            </tr>
-
-
-                        </div>
                     </tbody>
                 </table>
             </article>
@@ -222,7 +180,7 @@
                 </div>
                 <div class="modal-body ">
 
-                    <form>
+                    <form onsubmit="agregarModificar(event)" id="formJuego">
                         <div class="form-group mt-3 ">
                             <label>Codigo</label>
                             <input type="text " id="codigo " class="form-control " onblur="revisarCodigo(this) ">

@@ -510,3 +510,31 @@ horizontalmente y centrado */
       background-attachment: fixed;
       background-size: cover;
   }
+  
+  .fondo-contacto {
+      background-image: url(/src/img/productos/Fondo-contacto.jpg);
+      background-position: center center;
+      /* Esta imagen no debe de repetirse */
+      background-repeat: no-repeat;
+      /* COn esta regla fijamos la imagen en la pantalla. */
+      background-attachment: fixed;
+      /* La imagen ocupa el 100% y se reescala */
+      background-size: cover;
+      /* Damos un color de fondo mientras la imagen está cargando  */
+  }
+  
+  .card-contacto {
+      width: 500px;
+      max-width: 100%;
+      margin: auto;
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 0 20px 1px rgba(0, 0, 0, 1);
+      position: relative;
+  }
+  
+  .form-control {
+      background-color: #c7c7c7;
+  }
