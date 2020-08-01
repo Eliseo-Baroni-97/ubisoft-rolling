@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet"></head>
 
-<body>
+<body class="fondo-contacto">
     <header class="fix-navbar">
         <nav class="navbar navbar-expand-lg navbar-dark bg-navbar fixed-top">
             <div class="container">
@@ -45,11 +45,73 @@
             </div>
         </nav>
     </header>
+    <main>
+        <div class="container mt-5 position-form">
+            <section class="card border-dark my-4 card-contacto">
+                <div class="card-body text-center">
+                    <h3 class="card-title "><strong>Formulario de contacto</strong></h3>
+                    <form class="my-4" onsubmit="validarGeneral(event)">
+                        <div class="form-group">
+                            <input type="text" class="form-control rounded-pill " placeholder="Nombre y Apellido "
+                                id="nombre" onblur="requerido(this)" onkeyup="requerido(this)">
+                            <div class="valid-feedback">
+                                Todo bien
+                            </div>
+                            <div class="invalid-feedback">
+                                Ingresa tu nombre querido
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control rounded-pill" placeholder="Email" id="email"
+                                onblur="revisarEmail(this)" onkeyup="revisarEmail(this)">
+                            <div class="valid-feedback">
 
+                            </div>
+                            <div class="invalid-feedback">
+                                Ingrese un email válido
+                            </div>
+                        </div>
 
+                        <div class="form-group rounded-pill">
+                            <select class="form-control rounded-pill" id="asunto">
+                                <option>Soporte tecnico</option>
+                                <option>Consulta administrativa</option>
+                                <option>Asesoría comercial</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control rounded" id="consulta"
+                                placeholder="Ingresa tu consulta (al menos de 10 caracteres)"
+                                onblur="revisarConsulta(this)"></textarea>
+                            <div class="valid-feedback">
+                                Perfecto, continuar.
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor ingrese una consulta.
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="terminos">
+                                <label class="form-check-label">Estoy de acuerdo de recibir un correo respuesta de parte
+                                    de ubisoft</label>
+                                <div class="valid-feedback">
+                                </div>
+                                <div class="invalid-feedback">
 
-
-
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-ubisoft rounded-pill btn-lg  px-5 text-center" id="btnEnviar" type="submit">Enviar</button>
+                        <div class="alert alert-info m-4 d-none" id="msjEnvio" role="alert">
+                            El correo se envió correctamente
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
 
     <!-- Modal -->
     <div class="modal fade" id="modalLoginRegistro" tabindex="-1" role="dialog" aria-labelledby="modalLoginRegistroLabel"
