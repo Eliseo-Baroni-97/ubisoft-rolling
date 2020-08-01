@@ -246,3 +246,8 @@ window.modificarJuego = function (codigo) {
       "info"
     );
   }
+
+  window.destacarJuego = function(juegoSeleccionado){
+    //llevar al objeto seleccionado al frente del arreglo...
+    
+  };
