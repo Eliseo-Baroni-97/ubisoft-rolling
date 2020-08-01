@@ -113,7 +113,7 @@ function dibujarFilas(arregloLS) {
         <td class="d-flex justify-content-center d-flex align-items-center">
             <button class="btn btn-outline-info"  onclick="modificarJuego(${arregloLS[i].codigo})"><i class="fas fa-pencil-alt "></i></button>
             <button class="btn btn-outline-danger" onclick="eliminarJuego(${arregloLS[i].codigo})"><i class="fas fa-trash-alt "></i></button>
-            <button class="btn btn-outline-success" onclick="destacarJuego(${arregloLS[i].codigo}"><i class="fas fa-star "></i></button>
+            <button class="btn btn-outline-success" id="botonFav${arregloLS[i].codigo}" onclick="destacarJuego(${arregloLS[i].codigo})"><i class="fas fa-star"></i></button>
         </td>
     </tr>
 </div>`;
@@ -249,5 +249,29 @@ window.modificarJuego = function (codigo) {
 
   window.destacarJuego = function(juegoSeleccionado){
     //llevar al objeto seleccionado al frente del arreglo...
-    
+    let objetoDestacado = listaDeJuegos.find(function (destacado) {
+        return destacado.codigo == juegoSeleccionado;
+      });
+      let i = listaDeJuegos.findIndex(codigo => codigo.codigo == juegoSeleccionado);
+    //eliminar el archivo repetido...
+      listaDeJuegos.splice(i, 1);
+    //escribir en la nueva posicion el elemento...
+      listaDeJuegos.unshift(objetoDestacado);
+      console.log(listaDeJuegos);
+    //actualizar el localstorage...
+    localStorage.setItem("juegosKey", JSON.stringify(listaDeJuegos));
+    //actualizar la lista de juegos...
+    leerDatos();
+    swal.fire(
+        "Producto destacado!",
+        "El juego ha sido destacado, ahora se mostrara primero.",
+        "success"
+      );
+    //destacar el boton estrella...
+    for(let i in listaDeJuegos){
+        if(i == 0){
+            let botonFav = document.getElementById('botonFav'+juegoSeleccionado);
+            botonFav.className = "btn btn-success";
+        }
+    };
   };
