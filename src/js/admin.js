@@ -4,7 +4,7 @@ import '../css/style.css';
 import Jueguito from "./juegoClass";
 import $ from "jquery";
 import "@fortawesome/fontawesome-free/js/all.js"
-import Swal from "sweetalert2";
+import swal from "sweetalert2";
 
 
 let listaJuegos = [];
@@ -44,7 +44,7 @@ window.agregarJuego = function() {
         let ventanaModal = document.getElementById("modalJuego");
         $(ventanaModal).modal("show");
 
-        Swal.fire(
+        swal.fire(
             "Producto Juego",
             "Tu juego se adhirió",
             "success"
@@ -89,7 +89,7 @@ function leerDatos() {
 }
 
 function dibujarFilas(arregloLS) {
-    let tbody = document.getElementById("tablaProducto");
+    let tbody = document.getElementById("tablaJuego");
     let codigoHTML = "";
 
     for (let i in arregloLS) {
@@ -127,7 +127,7 @@ window.limpiarForm = function() {
     juegoExistente = false;
 };
 window.eliminarJuego = function(codigo) {
-    const swalWithBootstrapButtons = Swal.mixin({
+    const swalWithBootstrapButtons = swal.mixin({
         customClass: {
             confirmButton: "btn btn-success",
             cancelButton: "btn btn-danger mx-3",
@@ -163,7 +163,7 @@ window.eliminarJuego = function(codigo) {
                 );
             } else if (
                 /* Read more about handling dismissals below */
-                result.dismiss === Swal.DismissReason.cancel
+                result.dismiss === swal.DismissReason.cancel
             ) {
                 swalWithBootstrapButtons.fire(
                     "Cancelado",
@@ -194,6 +194,8 @@ window.modificarJuego = function(codigo) {
 };
 
 window.agregarModificar = function(e) {
+    console.log("ingresoo submit")
+
     e.preventDefault();
 
     if (juegoExistente == false) {
@@ -230,7 +232,7 @@ function guardarJuegoModificado() {
     let ventanaModal = document.getElementById("modalJuego");
     $(ventanaModal).modal("hide");
 
-    Swal.fire(
+    swal.fire(
         "Juego modificado",
         "Tu Juego fue modificado correctamente",
         "info"

@@ -6,7 +6,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
     entry: {
         index: './src/js/index.js',
-        404: './src/js/404.js',
+        e404: './src/js/404.js',
         about: './src/js/about.js',
         admin: './src/js/admin.js',
         contact: './src/js/contact.js',
@@ -52,46 +52,104 @@ module.exports = {
                 removeScriptTypeAttributes: true,
                 removeStyleLinkTypeAttributes: true,
                 useShortDoctype: true
-            }
+            },
+            inject: true,
+            chunks: ['index'],
         }),
         new HtmlWebpackPlugin({
             template: './src/admin.html',
+            minify: {
+                collapseWhitespace: true,
+                removeComments: true,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                useShortDoctype: true
+            },
             inject: true,
             chunks: ['admin'],
             filename: './admin.html'
         }),
         new HtmlWebpackPlugin({
             template: './src/404.html',
+            minify: {
+                collapseWhitespace: true,
+                removeComments: true,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                useShortDoctype: true
+            },
             inject: true,
-            chunks: ['404'],
+            chunks: ['e404'],
             filename: './404.html'
         }),
         new HtmlWebpackPlugin({
             template: './src/about.html',
+            minify: {
+                collapseWhitespace: true,
+                removeComments: true,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                useShortDoctype: true
+            },
             inject: true,
             chunks: ['about'],
             filename: './about.html'
         }),
         new HtmlWebpackPlugin({
             template: './src/contact.html',
+            minify: {
+                collapseWhitespace: true,
+                removeComments: true,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                useShortDoctype: true
+            },
             inject: true,
             chunks: ['contact'],
             filename: './contact.html'
         }),
         new HtmlWebpackPlugin({
             template: './src/games.html',
+            minify: {
+                collapseWhitespace: true,
+                removeComments: true,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                useShortDoctype: true
+            },
             inject: true,
             chunks: ['games'],
             filename: './games.html'
         }),
         new HtmlWebpackPlugin({
             template: './src/login.html',
+            minify: {
+                collapseWhitespace: true,
+                removeComments: true,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                useShortDoctype: true
+            },
             inject: true,
             chunks: ['login'],
             filename: './login.html'
         }),
         new HtmlWebpackPlugin({
             template: './src/register.html',
+            minify: {
+                collapseWhitespace: true,
+                removeComments: true,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                useShortDoctype: true
+            },
             inject: true,
             chunks: ['register'],
             filename: './register.html'
