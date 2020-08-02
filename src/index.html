@@ -13,13 +13,15 @@
 </head>
 
 <body>
-    <header class="fix-navbar no-gutters">
+    <header class="fix-navbar">
         <nav class="navbar navbar-expand-lg navbar-dark bg-navbar fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="img/logo.svg" width="50" height="50" alt="logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -32,6 +34,42 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="404.html">SOPORTE</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="" data-toggle="modal" data-target="#modalLoginRegistro">MI
+                                CUENTA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <header class="fix-navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-navbar fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.svg" width="50" height="50" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="games.html">JUEGOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="404.html">SOPORTE</a>
+                        </li>
+                        <li class="nav-item d-none">
+                            <a class="nav-link" href="404.html">ADMIN</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
@@ -91,61 +129,83 @@
             <div class="card  p-3 mb-5 bg-white rounded">
                 <div class="row ">
                     <div class="col-md-8">
-                        <iframe width="100%" height="415" src="https://www.youtube.com/embed/tSDMwngdkF4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+                        <iframe width="100%" height="415" src="https://www.youtube.com/embed/tSDMwngdkF4"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe> </div>
                     <div class="col-md-4  d-flex">
                         <div class="card-block  align-self-center">
                             <h4 class="titulos-card pb-3">Far Cry 6</h4>
-                            <p class="card-text">Adéntrate en el poco acogedor mundo de una guerrilla moderna en plena revolución para liberar a una nación de las manos de unos dictadores opresores.</p>
+                            <p class="card-text">Adéntrate en el poco acogedor mundo de una guerrilla moderna en plena
+                                revolución para liberar
+                                a una nación de las manos de unos dictadores opresores.</p>
                             <a href="404.html" class="btn btn-ubisoft rounded-pill p-3 m-2">Ver mas...</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
     </main>
 
     <div class="container">
-        <h5 class="mt-5"> <strong> Recomendado Para Ti</strong></h5>
-
-
-        <div class="card-deck m-2">
-
-            <div class="card-deck m-2 cardAgregar">
-                <div class="card card-hover-shadow">
-                    <a href="/dist/juego-watchdogs2.html"><img src="/dist/img/productos/Watch-Dogs-2-caratula.png" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Watch Dogs 2 </h5>
-                        <p class="card-text">Juega como Marcus Holloway, un joven y brillante hacker que vive en la cuna de la revolución tecnológica, la zona de la bahía de San Francisco. Colabora con DedSec, un conocido grupo de hackers, para ejecutar el mayor hackeo de
-                            la historia.</p>
+        <h5 class="mt-5 mb-3"> <strong> Disparos</strong></h5>
+        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+            <div class="container">
+                <div class="carousel-inner px-3">
+                    <div class="carousel-item active" data-interval="10000">
+                        <div class="row">
+                            <div class="col">
+                                <img src="/src/img/productos/Rainbow-Six-Siege caratula.png" width=200 alt=""> </div>
+                            <div class="col ">
+                                <img src="/src/img/productos/Rainbow-Six-Siege caratula.png" width=200 alt=""> </div>
+                            <div class="col ">
+                                <img src="/src/img/productos/Rainbow-Six-Siege caratula.png" width=200 alt=""> </div>
+                            <div class="col">
+                                <img src="/src/img/productos/Rainbow-Six-Siege caratula.png" width=200 alt=""> </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="2000">
+                        <div class="row">
+                            <div class="col">
+                                <img src="/src/img/productos/Rainbow-Six-Siege caratula.png" width=200 alt=""> </div>
+                            <div class="col ">
+                                <img src="/src/img/productos/Rainbow-Six-Siege caratula.png" width=200 alt=""> </div>
+                            <div class="col ">
+                                <img src="/src/img/productos/Rainbow-Six-Siege caratula.png" width=200 alt=""> </div>
+                            <div class="col">
+                                <img src="/src/img/productos/Rainbow-Six-Siege caratula.png" width=200 alt=""> </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="row ">
+                            <div class="col">
+                                <img src="/src/img/productos/Rainbow-Six-Siege caratula.png" width=200 alt=""> </div>
+                            <div class="col ">
+                                <img src="/src/img/productos/Rainbow-Six-Siege caratula.png" width=200 alt=""> </div>
+                            <div class="col ">
+                                <img src="/src/img/productos/Rainbow-Six-Siege caratula.png" width=200 alt=""> </div>
+                            <div class="col">
+                                <img src="/src/img/productos/Rainbow-Six-Siege caratula.png" width=200 alt=""> </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card card-hover-shadow">
-                    <a href="/dist/juego-rainbow siege.html"><img src="/dist/img/productos/Rainbow-Six-Siege caratula.png" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Rainbow Six Siege</h5>
-                        <p class="card-text">Es hora de agruparse y tomar por asalto la explosiva acción PvP de 5v5. Tom Clancy's Rainbow Six® Siege cuenta una enorme alineación de operadores especializados, cada uno con dispositivos capaces de cambiar el rumbo del juego
-                            y ayudar a tu equipo a conseguir la victoria.</p>
-                    </div>
-                </div>
-                <div class="card card-hover-shadow">
-                    <a href="/dist/juego-farcry6.html"><img src="/dist/img/productos/Far Cry 6 caratula.png" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Far Cry 6</h5>
-                        <p class="card-text">Juega como Dani Rojas, un nativo de Yara, y conviértete en un guerrillero para liberar a tu nación.</p>
-                    </div>
-                </div>
-
             </div>
+            <div>            
+            </div>
+            <a class="carousel-control-prev bg-transparent sin-w"role="button" data-slide="prev">
+                <i class="fas fa-arrow-circle-left fa-3x " href="#carouselExampleInterval" role="button" data-slide="prev"></i>
+                <span class="sr-only ">Previous</span>
+            </a>
+            <a class="carousel-control-next bg-transparent sin-w" role="button" data-slide="next">
+                <i class="fas fa-arrow-circle-right fa-3x " href="#carouselExampleInterval" role="button" data-slide="next"></i>
+                <span class="sr-only bg-dark">Next</span>
+            </a>
+    
         </div>
     </div>
 
-    <div class="text-center mt-5">
+
+    <div class="text-center mt-5 mb-5">
         <a href="games.html" class="btn btn-ubisoft rounded-pill btn-lg py-4 px-5">Ver Todos los Juegos</a>
     </div>
     <hr>
@@ -161,7 +221,8 @@
                     <img class="card-img-top" src="img/cards/news cards/news-01.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="titulos-card">Hyper Scape - Creators Cup</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
                         <a href="404.html" class="btn btn-ubisoft rounded-pill p-3 m-2">Ver mas...</a>
                     </div>
                 </div>
@@ -175,7 +236,9 @@
                         <div class="col-md-8 px-3 d-flex">
                             <div class="card-block pt-3 align-self-center">
                                 <h4 class="titulos-card">Trailer Oficial: Assasin's Creed: Vallhala</h4>
-                                <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                    ut
+                                    labore et dolore magna aliqua.</p>
                                 <a href="404.html" class="btn btn-ubisoft rounded-pill p-3 m-2">Ver mas...</a>
                             </div>
                         </div>
@@ -186,7 +249,9 @@
                         <div class="col-md-8 px-3 d-flex">
                             <div class="card-block pt-3 pl-2 align-self-center">
                                 <h4 class="titulos-card">UPlay+ con descuento!</h4>
-                                <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                    ut
+                                    labore et dolore magna aliqua.</p>
                                 <a href="404.html" class="btn btn-ubisoft rounded-pill p-3 m-2">Ver mas...</a>
                             </div>
                         </div>
@@ -207,13 +272,15 @@
         <div class="text-center my-4">
             <h1 class="titulos">Ubisoft Merch</h1>
         </div>
-        <article class="container-fluid bg-ubistore mb-5">
+        <article class="container-fluid bg-ubistore p-5 mb-5">
             <div class="container">
                 <div class="card bg-dark text-white my-4 ">
                     <img src="img/cards/merch cards/merch-01.jpg" class="card-img" alt="assasins-creed-collections">
                     <div class="card-img-overlay">
                         <h5 class="card-title carousel-title1">Assassin's Creed Oficial</h5>
-                        <p class="card-text carousel-title2">La coleccion oficial de merchandising de Assassin's Creed Origins ya esta a la venta. Colecciona y gana descuentos para nuevas adquisiciones. </p>
+                        <p class="card-text carousel-title2">La coleccion oficial de merchandising de Assassin's
+                            Creed
+                            Origins ya esta a la venta. Colecciona y gana descuentos para nuevas adquisiciones. </p>
                         <a class="btn rounded-pill btn-ubisoft py-3 px-4" href="404.html">Ver mas...</a>
                     </div>
                 </div>
@@ -221,7 +288,9 @@
                     <img src="img/cards/merch cards/merch-02.jpg" class="card-img" alt="for honors merchandising">
                     <div class="card-img-overlay">
                         <h5 class="card-title carousel-title1">Nueva Coleccion For Honor</h5>
-                        <p class="card-text carousel-title2">El juego bestseller 2019 tiene ahora su propia coleccion de merchandising. Hazte con ella!</p>
+                        <p class="card-text carousel-title2">El juego bestseller 2019 tiene ahora su propia
+                            coleccion de
+                            merchandising. Hazte con ella!</p>
                         <a class="btn rounded-pill btn-ubisoft py-3 px-4" href="404.html">Ver mas...</a>
                     </div>
                 </div>
@@ -229,16 +298,18 @@
         </article>
         <hr>
     </section>
-    <section class="container-fluid bg-pink mt-5">
+    <section class="container-fluid bg-pink mt-5 p-5">
         <div class="row d-flex justify-content-center">
             <div class="col-sm-12 col-lg-5 d-none d-lg-block p-4">
                 <img src="img/devices icon.png" alt="multiple devices image" width="90%">
             </div>
             <div class="col-sm-12 col-lg-5 align-self-center">
                 <h1 class="titulos my-4 text-light">Quedate en contacto con nosotros.</h1>
-                <h2 class="lead text-light">Puedes entrar a la pagina de contacto pulsando el boton. O bien, puedes descargar nuestra app Ubisoft Club para dispositivos mobiles.</h2>
+                <h2 class="lead text-light">Puedes entrar a la pagina de contacto pulsando el boton. O bien, puedes
+                    descargar nuestra app Ubisoft Club para dispositivos mobiles.</h2>
                 <div class="row d-flex">
-                    <a href="contact.html" target="blank_" class="btn btn-ubisoft-dark rounded-pill px-5 py-3 my-4 mr-5">Contacto</a>
+                    <a href="contact.html" target="blank_"
+                        class="btn btn-ubisoft-dark rounded-pill px-5 py-3 my-4 mr-5">Contacto</a>
                     <div class="my-4 align-self-center">
                         <a href="https://www.apple.com" target="blank_"><i
                                 class="fab fa-3x fa-app-store footer-link mx-3"></i></a>
@@ -254,7 +325,8 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="modalLoginRegistro" tabindex="-1" role="dialog" aria-labelledby="modalLoginRegistroLabel" aria-hidden="true">
+    <div class="modal fade" id="modalLoginRegistro" tabindex="-1" role="dialog"
+        aria-labelledby="modalLoginRegistroLabel" aria-hidden="true">
         <div class="modal-dialog">
             <h5 class="modal-title titles" id="modalLoginRegistroLabel">MI CUENTA</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
